@@ -1,30 +1,3 @@
-/*
-  \__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__
-
-  AO PREENCHER ESSE CABEÇALHO COM O MEU NOME E O MEU NÚMERO USP, 
-  DECLARO QUE SOU O ÚNICO AUTOR E RESPONSÁVEL POR ESSE PROGRAMA. 
-  TODAS AS PARTES ORIGINAIS DESSE EXERCÍCIO PROGRAMA (EP) FORAM 
-  DESENVOLVIDAS E IMPLEMENTADAS POR MIM SEGUINDO AS INSTRUÇÕES DESSE EP
-  E QUE PORTANTO NÃO CONSTITUEM PLÁGIO. DECLARO TAMBÉM QUE SOU RESPONSÁVEL
-  POR TODAS AS CÓPIAS DESSE PROGRAMA E QUE EU NÃO DISTRIBUI OU FACILITEI A
-  SUA DISTRIBUIÇÃO. ESTOU CIENTE QUE OS CASOS DE PLÁGIO SÃO PUNIDOS COM 
-  REPROVAÇÃO DIRETA NA DISCIPLINA.
-
-  Nome:
-  NUSP:
-
-  IMDB: iofilmes.c
-
-
-  Referências: Com exceção das rotinas fornecidas no esqueleto e em sala
-  de aula, caso você tenha utilizado alguma refência, liste-as abaixo
-  para que o seu programa não seja considerada plágio.
-  Exemplo:
-  - função mallocc retirada de: http://www.ime.usp.br/~pf/algoritmos/aulas/aloca.html
-
-  \__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__
-*/
-
 /*--------------------------------------------------------------------*/
 /* Interface para sa funcoes neste modulo                             */
 #include "iofilmes.h"
@@ -257,67 +230,6 @@ carregueListaFilmes(ListaFilmes *lst, Bool semRepeticoes)
            lst->nFilmes);
     printf("carregueFilmes: leitura concluida\n");
     LINHA;
-}
-
-/*----------------------------------------------------------------------
- *  graveListaFilmes(lst) 
- * 
- *  RECEBE um ponteiro LST para uma estrutura que representa uma lista 
- *  de filmes.
- * 
- *  A funcao le o nome de um arquivo da estrada padrao e grava a 
- *  lista de filmes em um arquivo com esse nome de acordo com o 
- *  formato do IMDB;
- * 
- *  - 6     espacos
- *  - %s    dist  (string com 10 caracteres)
- *  - %7d   votos 
- *  - %7.1  nota  
- *  - %s    nome
- *  - (%d)  ano
- * 
- *  Exemplo:
- * 
- *  0.0.003003      29   7.0  Always a Bridesmaid (2000)
- *  ....*....*....*....*....*....*....*....*....*....*....*....*
- */
-void 
-graveListaFilmes(ListaFilmes *lst) 
-{
-    FILE *arq;
-    char nomeArq[TAM_STR];
-    Filme *flm;
-
-    if (lst == NULL)
-    {
-        AVISO(graveListaFilmes: NULL recebido como parametro);
-        return;
-    }
-
-    printf("graveLista: digite o nome do arquivo: ");
-    leiaString(nomeArq, TAM_STR);
-
-    printf("AVISO: graveLista: nome do arquivo de saida: '%s'\n", nomeArq);
-    if ((arq = fopen(nomeArq, "w")) == NULL) 
-    {
-        fprintf(stderr,
-                "graveLista: ERRO nao foi possivel criar o arquivo '%s'.\n\n", 
-                nomeArq);
-        return; 
-    }
-  
-    for (flm = lst->cab->prox; flm != lst->cab; flm = flm->prox)
-    {
-        fprintf(arq, "      %s %7d %7.1f\t%s\t(%d)\n", 
-                flm->dist, 
-                flm->votos, 
-                flm->nota, 
-                flm->nome, 
-                flm->ano);
-    }
-    
-    fclose(arq);
-    AVISO(graveLista: lista gravada no arquivo);
 }
 
 /*----------------------------------------------------------------------

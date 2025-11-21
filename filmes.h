@@ -1,9 +1,6 @@
 /*
   NAO MODIFIQUE NADA QUE ESTA ESCRITO NESTE ARQUIVO.
 
-  NO ENTANTO, VOCE PODE ACRESCENTAR ALGO QUE ACHAR CONVENIENTE
-  COMO PROTOTIPOS DE NOVAS FUNCOES.
-
   Aqui estao declarados o tipo Filme, ListaFilmes e os prototipo das 
   funcoes que manipulam a filmes e listas de filmes.
   

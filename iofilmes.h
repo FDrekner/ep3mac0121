@@ -1,9 +1,6 @@
 /*
   NAO EDITE OU MODIFIQUE NADA QUE ESTA ESCRITO NESTE ESQUELETO
 
-  NO ENTANTO, VOCE PODE ACRESCENTAR ALGO QUE ACHAR CONVENIENTE
-  COMO PROTOTIPOS DE NOVAS FUNCOES.
-
   Aqui estao os prototipo das funcoes de entrada e saida 
   de filmes.
   
@@ -17,9 +14,6 @@
 
 void
 carregueListaFilmes(ListaFilmes *lst, Bool semRepeticoes);
-
-void
-graveListaFilmes(ListaFilmes *lst);
 
 void
 mostreFilme(Filme *flm);

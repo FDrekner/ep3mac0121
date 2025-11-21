@@ -1,30 +1,3 @@
-/*
-  \__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__
-
-  AO PREENCHER ESSE CABEÇALHO COM O MEU NOME E O MEU NÚMERO USP, 
-  DECLARO QUE SOU O ÚNICO AUTOR E RESPONSÁVEL POR ESSE PROGRAMA. 
-  TODAS AS PARTES ORIGINAIS DESSE EXERCÍCIO PROGRAMA (EP) FORAM 
-  DESENVOLVIDAS E IMPLEMENTADAS POR MIM SEGUINDO AS INSTRUÇÕES DESSE EP
-  E QUE PORTANTO NÃO CONSTITUEM PLÁGIO. DECLARO TAMBÉM QUE SOU RESPONSÁVEL
-  POR TODAS AS CÓPIAS DESSE PROGRAMA E QUE EU NÃO DISTRIBUI OU FACILITEI A
-  SUA DISTRIBUIÇÃO. ESTOU CIENTE QUE OS CASOS DE PLÁGIO SÃO PUNIDOS COM 
-  REPROVAÇÃO DIRETA NA DISCIPLINA.
-
-  Nome:
-  NUSP:
-
-  IMDB: util.c
-
-
-  Referências: Com exceção das rotinas fornecidas no esqueleto e em sala
-  de aula, caso você tenha utilizado alguma refência, liste-as abaixo
-  para que o seu programa não seja considerada plágio.
-  Exemplo:
-  - função mallocc retirada de: http://www.ime.usp.br/~pf/algoritmos/aulas/aloca.html
-
-  \__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__\__
-*/
-
 /* 
  * IMPLEMENTACAO de funcoes de uso geral 
  *
@@ -113,24 +86,6 @@ strCmp(const char *s1, const char *s2)
  
     return c1 - c2;
 }
-
-/* 
- * Sobre a GLIBC:
- *
- * The GNU C Library, commonly known as glibc, is the GNU Project's 
- * implementation of the C standard library. Despite its name, it now 
- * also directly supports C++ (and, indirectly, other programming languages). 
- * It was started in the early 1990s by the Free Software Foundation (FSF) 
- * for their GNU operating system.
- * 
- * Released under the GNU Lesser General Public License,[3] glibc is free software. 
- * The GNU C Library project provides the core libraries for the GNU system and 
- * GNU/Linux systems, as well as many other systems that use Linux as the kernel. 
- * These libraries provide critical APIs including ISO C11, POSIX.1-2008, BSD, 
- * OS-specific APIs and more. These APIs include such foundational facilities 
- * as open, read, write, malloc, printf, getaddrinfo, dlopen, pthread_create, 
- * crypt, login, exit and more.
- */
 
 
 /*--------------------------------------------------------------

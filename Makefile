@@ -22,4 +22,4 @@ util.o: util.h util.c
 	$(CC) $(CFLAGS) -c util.c
 
 clean: 
-	$(RM) *.o *~
+	$(RM) *.o imdb
