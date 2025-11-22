@@ -5,7 +5,7 @@
  * de uma tabela de dispersão (hash table). A
  *
  * As chaves (keys) para a tabelas de símbolos sao palavras
- * que aparecem no tituto dos filmes. Os objetos (itens) da
+ * que aparecem no titulo dos filmes. Os objetos (itens) da
  * tabela sao os filmes que possuem a palavra em seus titulos.
  *
  */

@@ -113,7 +113,8 @@ main(int argc, char *argv[])
             flm = crieFilme(dist, votos, nota, nome, ano);
             mostreFilme(flm);
             
-            /* completar essa opcao */
+            /* COMPLETAR ESSA OPERAÇÃO */
+
             break;
         }
 
@@ -130,7 +131,7 @@ main(int argc, char *argv[])
         }
 
         /*---------------------------------------------*/
-        case ORDENAR_NOTA_Q: /* opcional */
+        case ORDENAR_NOTA_Q: 
         {
             break;
         }
@@ -217,10 +218,6 @@ leiaOpcao()
     printf("%s",listaOpcoes2);
     printf("Digite uma opcao: ");
     scanf(" %c", &opcao);
-
-    /* main.c: warning: string length ‘679’ is greater than the length 
-       ‘509’ ISO C90 compilers are required to support 
-       [-Woverlength-strings] */
 
     return opcao;
 }

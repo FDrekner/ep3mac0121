@@ -11,7 +11,7 @@
 #define _FILMES_H
 
 #include "util.h" /* Bool */
-#include "main.h" /* Criterio */
+#include "main.h" 
 
 #define TAM_DIST 10
 
@@ -51,7 +51,7 @@ ListaFilmes *
 crieListaFilmes();
 
 Filme *
-crieFilme(char *dist, int votos, float nota, char *nome, int ano);
+crieFilme(char dist[], int votos, float nota, char *nome, int ano);
 
 void 
 libereListaFilmes(ListaFilmes *lst);

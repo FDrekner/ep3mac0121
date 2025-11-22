@@ -10,7 +10,7 @@
 #include "util.h"    /* Bool */
 #include "iofilmes.h"
 #include "st.h"      /* freeST(), initST(), putFilmeST(), getFilmeST(),
-                        showST(), freeST() */
+                        showST() */
 
 /*----------------------------------------------------------------------
  *  crieFilme
@@ -155,8 +155,8 @@ removaFilme(ListaFilmes *lst, Filme *flm)
 /*----------------------------------------------------------------------
  *  mergeSortFilmes
  *
- *  Recebe uma lista de filmes LST e ordena a lista utilizando o
- *  algoritmo mergeSort recursivo adaptado para listas encadeadas
+ *  Recebe uma lista de filmes LST e ordena a lista por nomes utilizando 
+ *  o algoritmo mergeSort recursivo adaptado para listas encadeadas
  *  duplamente ligadas com cabeca.
  *
  *  ------------------------------------------------------------------
@@ -177,10 +177,10 @@ removaFilme(ListaFilmes *lst, Filme *flm)
  *  DICA:
  * 
  *  Como a ordenação não será feita com vetores indexados, pense em
- *  uma maneira de chegar ao filme na posição floor(n/2) da lista
+ *  uma maneira de chegar ao filme na posição floor(n/2) da lista.
  *
  *  ------------------------------------------------------------------
- *  Como a ordenaçõa é por nome, veja a funcao strCmp em util.[h|c].
+ *  Como a ordenação é por nome, veja a funcao strCmp em util.[h|c].
  */
 void 
 mergeSortFilmes(ListaFilmes *lst)
@@ -188,11 +188,12 @@ mergeSortFilmes(ListaFilmes *lst)
     AVISO(mergeSortFilmes em filmes.c:  Vixe ainda nao fiz essa funcao...);
 }
 
+
 /*----------------------------------------------------------------------
- *  quickSortFilmes [opcional]
+ *  quickSortFilmes
  *
- *  Recebe uma lista de filmes LST e ordena a lista utilizando o
- *  algoritmo quickSort adaptado para listas encadeadas duplamente
+ *  Recebe uma lista de filmes LST e ordena a lista por nota utilizando
+ *  o algoritmo quickSort adaptado para listas encadeadas duplamente
  *  ligadas com cabeca.
  *
  *  ------------------------------------------------------------------
@@ -246,4 +247,3 @@ hashFilmes(ListaFilmes *lst)
 {
     AVISO(hashFilmes em filmes.c: Vixe ainda nao fiz essa funcao...);
 }
-

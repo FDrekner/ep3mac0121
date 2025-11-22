@@ -2,19 +2,6 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
-
-#ifdef __linux__
-#    define  SYSTEM "linux"
-#elif __FreeBSD__
-#    define  SYSTEM "FreeBSD"
-#elif __MACH__
-#    define  SYSTEM "Mac OS X"
-#elif __MSDOS__
-#    define  SYSTEM "Windows"
-#else
-#    define  SYSTEM "SO deconhecido..."
-#endif
-
 enum opcoes
 {
     CARREGAR_SER    = 'c' /* carregar lista de filmes (Sem Eliminar Repeticoes)*/
